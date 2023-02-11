@@ -13,6 +13,8 @@ For this project, we expect you to look at these concepts:
 ## Background Context
 Write a simple UNIX command interpreter.
 
+![](https://github.com/mgemoraw/simple_shell/blob/main/shell.jpeg)
+
 ^ “The Gates of Shell”, by Spencer Cheng, featuring Julien Barbier
 
 ## Resources
