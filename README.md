@@ -15,7 +15,7 @@ Write a simple UNIX command interpreter.
 
 ![](https://github.com/mgemoraw/simple_shell/blob/main/shell.jpeg)
 
-^ “The Gates of Shell”, by Spencer Cheng, featuring Julien Barbier
+^ “The Gates of Shell”, by [Spencer Cheng](https://twitter.com/spencerhcheng/status/855104635069054977), featuring [Julien Barbier](https://twitter.com/julienbarbier42)
 
 ## Resources
 Read or watch:
