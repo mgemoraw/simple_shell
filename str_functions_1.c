@@ -30,7 +30,7 @@ void _puts(char *str)
  * @dest: destination string
  * @src: source string
  * @n: number of characters to be copied
- * 
+ *
  * Return: copied strings
  */
 char *_strncpy(char *dest, char *src, int n)
@@ -50,18 +50,21 @@ char *_strncpy(char *dest, char *src, int n)
 	return (dest);
 }
 /**
- * _strlen - function that counts the length of a string
+ * _strlen - function that returns the length of a string
  * @s: string input
+ *
  * Return: length of string
  */
 int _strlen(char *s)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		continue;
-	}
+	if (s == NULL)
+		return (0);
+
+	while (*s++)
+		i++;
+
 	return (i);
 }
 /**
