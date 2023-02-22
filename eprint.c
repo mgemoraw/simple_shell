@@ -2,7 +2,7 @@
 #include "macros.h"
 
 /**
- * print_echo - executes built-in echo function 
+ * print_echo - executes built-in echo function
  * @cmd: command
  * Return: 0 Upon Success -1 Upon Failure
  */

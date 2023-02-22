@@ -15,9 +15,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 
 	if (argv[1] != NULL)
 		read_file(argv[1], argv);
-
 	signal(SIGINT, handle_signal);
-
 	while (cond)
 	{
 		count++;
@@ -43,9 +41,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 				continue;
 			}
 			else
-			{
 				stat = check_cmd(cmd, input, count, argv);
-			}
 			free(cmd);
 		}
 		free(input);
