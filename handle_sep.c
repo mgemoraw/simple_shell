@@ -3,9 +3,8 @@
 
 /**
  * separator - separates cmd recieved from stdin by ;
- * @input: string gathered from stdin
- *
- * Return: parsed strings to be used
+ * @input: stringfrom stdin
+ * Return: parsed strings to be used as cmds
  */
 
 char **separator(char *input)
@@ -17,10 +16,8 @@ char **separator(char *input)
 
 	if (input[0] == ' ' && input[_strlen(input)] == ' ')
 		exit(0);
-
 	if (input == NULL)
 		return (NULL);
-
 	cmds = malloc(sizeof(char *) * buff_size);
 	if (!cmds)
 	{
@@ -28,14 +25,13 @@ char **separator(char *input)
 		perror("hsh");
 		return (NULL);
 	}
-
 	cmd = _strtok(input, ";&");
 	for (i = 0; cmd; i++)
 	{
 		cmds[i] = cmd;
 		cmd = _strtok(NULL, ";&");
 	}
-
 	cmds[i] = NULL;
+
 	return (cmds);
 }
