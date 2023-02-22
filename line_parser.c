@@ -1,5 +1,4 @@
 #include "shell.h"
-#include "macros.h"
 
 /**
  * parse_cmd - parses the command recieved from stdin

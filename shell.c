@@ -1,5 +1,4 @@
 #include "shell.h"
-#include "macros.h"
 
 /**
  * main - Begin shell

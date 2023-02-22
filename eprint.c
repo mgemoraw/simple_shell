@@ -1,5 +1,4 @@
 #include "shell.h"
-#include "macros.h"
 
 /**
  * print_echo - executes built-in echo function

@@ -1,5 +1,5 @@
 #include "shell.h"
-#include "macros.h"
+
 /**
 * _getline - read input from standard input by user
 *

@@ -1,5 +1,4 @@
 #include "shell.h"
-#include "macros.h"
 
 /**
  * separator - separates cmd recieved from stdin by ;

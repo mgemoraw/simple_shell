@@ -13,6 +13,12 @@
 #include <errno.h>
 #include <linux/limits.h>
 
+/* MACROS */
+
+#define PRINT(c) (write(STDERR_FILENO, c, _strlen(c)))
+#define BUFSIZE 10240
+#define DELIMITER " \t\r\n\a"
+
 char *_strncpy(char *dest, char *src, int n);
 int _strlen(char *s);
 int _putchar(char c);
