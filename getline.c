@@ -41,7 +41,7 @@ char *_getline()
 	buffer[i] = '\0';
 	buf = space(buffer);
 	free(buffer);
-	hashtag_handler(buf);
+	comment_handler(buf);
 	return (buf);
 }
 /**
