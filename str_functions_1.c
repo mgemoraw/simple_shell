@@ -1,8 +1,7 @@
 #include "shell.h"
 /**
  * _putchar - function that writes the character to stdout
- * @c: the character to print
- *
+ * @c: The character to print
  * Return: character to standard output
  */
 int _putchar(char c)
@@ -29,8 +28,8 @@ void _puts(char *str)
  * _strncpy - function that copies a string
  * @dest: destination string
  * @src: source string
- * @n: number of characters to be copied
  *
+ * @n: number of charaters to be copied
  * Return: copied strings
  */
 char *_strncpy(char *dest, char *src, int n)
@@ -50,7 +49,7 @@ char *_strncpy(char *dest, char *src, int n)
 	return (dest);
 }
 /**
- * _strlen - function that returns the length of a string
+ * _strlen - function that counts the length of a string
  * @s: string input
  *
  * Return: length of string
@@ -59,17 +58,16 @@ int _strlen(char *s)
 {
 	int i = 0;
 
-	if (s == NULL)
-		return (0);
-
-	while (*s++)
+	while (s[i] != '\0') 
+	{
 		i++;
-
+	}
 	return (i);
 }
 /**
  * _atoi - function to convert string to a integer
  * @s: string input
+ *
  * Return: converted integer
  */
 int _atoi(char *s)
